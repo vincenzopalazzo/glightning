@@ -411,7 +411,6 @@ func TestListFunds(t *testing.T) {
 	assert.Equal(t, len(funds.Channels), 0)
 }
 
-
 func fundNode(t *testing.T, amount string, n *Node, b *gbitcoin.Bitcoin) {
 	addr, err := n.rpc.NewAddr()
 	check(t, err)

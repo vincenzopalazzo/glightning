@@ -2,12 +2,12 @@ package jrpc2_test
 
 import (
 	"bufio"
+	"fmt"
 	"github.com/niftynei/glightning/jrpc2"
 	"github.com/stretchr/testify/assert"
 	"io"
 	"log"
 	"os"
-	"fmt"
 	"sync"
 	"testing"
 	"time"
