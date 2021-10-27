@@ -1060,9 +1060,9 @@ func (gm GetManifestMethod) Call() (jrpc2.Result, error) {
 }
 
 type ProxyConf struct {
-	Type string `json:"type"`
+	Type    string `json:"type"`
 	Address string `json:"address"`
-	port uint64 `json:"port"`
+	port    uint64 `json:"port"`
 }
 
 type Config struct {
@@ -1073,7 +1073,7 @@ type Config struct {
 	Features     *FeatureBits `json:"feature_set,omitempty"`
 	Proxy        *proxyConf   `json:"proxy,omitempty"`
 	TorV3Enabled bool         `json:"torv3-enabled,omitempty"`
-	AlwaysProxy bool          `json:"always_use_proxy,omitempty"`
+	AlwaysProxy  bool         `json:"always_use_proxy,omitempty"`
 }
 
 type InitMethod struct {
